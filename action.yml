@@ -1,0 +1,8 @@
+name: "Secret Scan"
+description: "Scan your repository for secrets"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: lock
+  color: red
