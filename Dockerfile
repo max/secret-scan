@@ -1,6 +1,6 @@
-FROM python:2-alpine
+FROM python:3-alpine
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL repository="http://github.com/max/secret-scan"
 LABEL homepage="http://github.com/max/secret-scan"
 LABEL maintainer="Max Schoening <max@max.wtf>"
