@@ -1,5 +1,6 @@
 name: "Secret Scan"
 description: "Scan your repository for secrets"
+author: "Max Schoening <max@max.wtf>"
 runs:
   using: "docker"
   image: "Dockerfile"
