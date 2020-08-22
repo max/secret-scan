@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM python:3-alpine
 
 RUN pip install truffleHog
 RUN apk --update add git less openssh && \
