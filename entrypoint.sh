@@ -5,12 +5,4 @@ echo "GitHub Workspace $GITHUB_WORKSPACE"
 echo "Include Path $INPUT_EXCLUDE_PATH"
 echo "Exclude Path $INPUT_INCLUDE_PATH"
 
-printenv
-
-ls
-
-cd $GITHUB_WORKSPACE
-
-ls
-
-trufflehog $GITHUB_WORKSPACE
+trufflehog --include_paths 'Configuration\include-patterns.txt' --exclude_paths 'Configuration\exclude-patterns.txt' $GITHUB_WORKSPACE
