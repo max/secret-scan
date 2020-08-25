@@ -1,2 +1,2 @@
 Src/Key.txt
-Src/resources/
+Src/Resources/*
