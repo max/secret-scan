@@ -3,10 +3,10 @@ description: "Scan your repository for secrets"
 author: "Max Schoening <max@max.wtf>"
 inputs:
   include_path:  
-    description: 'Path to configuration file with include path patterns'
+    description: 'Path to the configuration file with include path patterns'
     required: false
   exclude_path:  
-    description: 'Path to configuration file with exclude path patterns'
+    description: 'Path to the configuration file with exclude path patterns'
     required: false
 runs:
   using: "docker"
