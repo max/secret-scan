@@ -1,3 +1,2 @@
-(.*/)?\.classpath$
-.*\.jmx$
-(.*/)?test/(.*/)?resources/
+Src/Key.txt
+Src/resources/
