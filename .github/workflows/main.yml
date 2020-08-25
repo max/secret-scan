@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to scan for secrets
     steps:
-    - name: Secret Scan
-      id: Truffle-Hog
-      uses: JiDevOps/secret-scan@master
-      with:
-        include_path: 'Test Include Path'
-        exclude_path: 'Test Exclude Path'
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Secret Scan
+        id: Truffle-Hog
+        uses: JiDevOps/secret-scan@master
+        with:
+          include_path: 'Test Include Path'
+          exclude_path: 'Test Exclude Path'
