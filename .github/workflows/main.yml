@@ -3,7 +3,7 @@ name: Main
 on: [push]
 
 jobs:
-  TurffleHog:
+  TrffleHog:
     runs-on: ubuntu-latest
     name: A job to scan for secrets
     steps:
