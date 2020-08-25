@@ -13,5 +13,5 @@ jobs:
         id: Truffle-Hog
         uses: JiDevOps/secret-scan@master
         with:
-          include_path: 'Test Include Path'
-          exclude_path: 'Test Exclude Path'
+          include_path: 'Configuration/include_paths.txt'
+          exclude_path: 'Configuration/exclude_paths.txt'

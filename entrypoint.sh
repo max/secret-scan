@@ -2,9 +2,6 @@
 
 set -e
 
-echo "Include Path $INPUT_EXCLUDE_PATH"
-echo "Exclude Path $INPUT_INCLUDE_PATH"
+echo "Welcome to the action: Secret Scan! TruffleHog will run shortly. More information about TruffleHog is available at: https://github.com/dxa4481/truffleHog"
 
-echo "Testing"
-
-trufflehog --include_paths 'Configuration/include_paths.txt' --exclude_paths 'Configuration/exclude_paths.txt' $GITHUB_WORKSPACE
+trufflehog --include_paths $INPUT_EXCLUDE_PATH --exclude_paths $INPUT_EXCLUDE_PATH $GITHUB_WORKSPACE
