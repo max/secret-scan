@@ -31,4 +31,4 @@ jobs:
           exclude_path: 'configuration/exclude_paths.txt'
 ```
 
-For more information about the format of the configuration files for include / exclude paths, please refer to [TruffleHog](https://github.com/dxa4481/truffleHog).
+For more information about the format of the configuration files for include or exclude paths, please refer to [TruffleHog](https://github.com/dxa4481/truffleHog).
