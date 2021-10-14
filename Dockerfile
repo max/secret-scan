@@ -1,10 +1,8 @@
 FROM python:3-alpine
 
-RUN pip install truffleHog
-
-RUN apk --update add git less openssh && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm /var/cache/apk/*
+# hadolint ignore=DL3013,DL3018
+RUN pip install --no-cache-dir truffleHog && \
+    apk add --no-cache git less openssh
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 
