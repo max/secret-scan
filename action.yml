@@ -2,11 +2,14 @@ name: "Secret Scan"
 description: "Scan your repository for secrets"
 author: "Max Schoening <max@max.wtf>"
 inputs:
-  include_path:  
+  include_path:
     description: 'Path to the configuration file with include path patterns'
     required: false
-  exclude_path:  
+  exclude_path:
     description: 'Path to the configuration file with exclude path patterns'
+    required: false
+  allowed_patterns:
+    description: 'Path to the configuration file with allowed patterns'
     required: false
 runs:
   using: "docker"
@@ -14,6 +17,7 @@ runs:
   args:
     - ${{ inputs.include_path }}
     - ${{ inputs.exclude_path }}
+    - ${{ inputs.allowed_patterns }}
 branding:
   icon: lock
   color: red
